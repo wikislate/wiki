@@ -1,0 +1,198 @@
+    1  passwd
+    2  exit
+    3  yum install svn
+    4  sudo yum install svn
+    5  svn -version
+    6  svn --version
+    7  ls
+    8  pwd
+    9  cd /
+   10  ls
+   11  cd ~
+   12  svn co https://aanya-inc.svn.beanstalkapp.com/calc/ calc
+   13  ls
+   14  cd calc
+   15  ls
+   16  cd trunk
+   17  ls
+   18  calc.sh
+   19  vim calc.sh
+   20  sudo yum install vim
+   21  vim calc.sh
+   22  bash calc.sh 
+   23  svn ci -m "Addition"
+   24  svn st
+   25  svn add calc.sh 
+   26  svn ci -m "Addition"
+   27  cd ..
+   28  svn copy trunk branches/calc-1.0.0 -m "Release branch"
+   29  svn copy trunk branches/calc-1.0.0
+   30  cd branches/
+   31  ls
+   32  cd calc-1.0.0/
+   33  ls
+   34  cd ..
+   35  ls
+   36  svn ci -m "Release branch"
+   37  cd branches/calc-1.0.0/
+   38  ls
+   39  bash calc.sh 
+   40  vim calc.sh 
+   41  bash calc.sh 
+   42  vim calc.sh 
+   43  bash calc.sh 
+   44  vim calc.sh 
+   45  bash calc.sh 
+   46  svn st
+   47  svn ci -m "Test-1"
+   48  cd ..
+   49  svn copy calc-1.0.0/ ../tags/calc-1.0.0_01
+   50  cd ..
+   51  svn ci -m "UAT release"
+   52  svn up
+   53  svn merge branches/calc-1.0.0/ trunk/ -m "Release merge"
+   54  svn merge branches/calc-1.0.0/ trunk/
+   55  svn merge branches/calc-1.0.0/
+   56  svn st
+   57  svn ci -m "Release merge"
+   58  cd trunk/
+   59  ls
+   60  vi calc.sh 
+   61  ls -R
+   62  cd ..
+   63  ls -L
+   64  ls -R
+   65  svn merge --reintegrate branches/calc-1.0.0/
+   66  svn up
+   67  svn merge --reintegrate branches/calc-1.0.0/
+   68  ls
+   69  cp branches/calc-1.0.0/calc.sh trunk/
+   70  cd trunk/
+   71  ls
+   72  vi calc.sh 
+   73  svn st
+   74  svn -ci "Release merge"
+   75  svn ci -m "Release merge"
+   76  svn up
+   77  cd ..
+   78  svn up
+   79  svn log
+   80  cd branches/calc-1.0.0/
+   81  ls
+   82  vim calc.sh
+   83  bash calc.sh 
+   84  vim calc.sh
+   85  svn revert calc.sh 
+   86  cd ..; svn copy calc-1.0.0 calc-1.0.1
+   87  svn ci -m "Hot fix - 1"
+   88  cd calc-1.0.1
+   89  ls
+   90  vi calc.sh 
+   91  ls
+   92  cd calc/
+   93  ls
+   94  cat calc.sh 
+   95  svn rm calc.sh 
+   96  svn ci -m "Removing garbage"
+   97  svn st
+   98  svn up
+   99  sudo yum install git
+  100  git -version
+  101  git --version
+  102  ls
+  103  cd calc/
+  104  ls
+  105  svn up
+  106  svn info
+  107  cd trunk/
+  108  cd ../branches/
+  109  ls
+  110  cd calc-1.0.0
+  111  svn merge --reintegrate https://aanya-inc.svn.beanstalkapp.com/calc/branches/calc-1.0.1
+  112  cd ../trunk 
+  113  cd ../../trunk
+  114  svn merge --reintegrate https://aanya-inc.svn.beanstalkapp.com/calc/branches/calc-1.0.0
+  115  svn resolve --accept working -R .
+  116  svn merge --reintegrate https://aanya-inc.svn.beanstalkapp.com/calc/branches/calc-1.0.0
+  117  svn st
+  118  cd ..
+  119  svn st
+  120  svn up
+  121  svn ci -m "Merge"
+  122  svn up
+  123  svn merge --reintegrate https://aanya-inc.svn.beanstalkapp.com/calc/branches/calc-1.0.0
+  124  ls
+  125  cd trunk/
+  126  svn merge --reintegrate https://aanya-inc.svn.beanstalkapp.com/calc/branches/calc-1.0.0
+  127  svn st
+  128  svn resolve --accept working -R .
+  129  svn st
+  130  svn ci -m "merge conflict"
+  131  svn up
+  132  svn st
+  133  cd ..
+  134  svn up
+  135  cd trunk/
+  136  ls
+  137  cat calc.sh 
+  138  cd ..
+  139  ls
+  140  cd ..
+  141  rm -rf calc/
+  142  ls
+  143  svn co https://aanya-inc.svn.beanstalkapp.com/calc/ calc
+  144  svn st
+  145  cd calc/
+  146  ls
+  147  svn st
+  148  yum install git
+  149  yum install git sudo
+  150  sudo yum install git
+  151  sudo yum install jenkins
+  152  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+  153  sudo yum install wget 
+  154  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+  155  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+  156  sudo yum install jenkins
+  157  cd wiki
+  158  ls
+  159  vim readme.md 
+  160  ls -a
+  161  rm .readme.md.swp 
+  162  git add readme.md 
+  163  git commit -m "kCHRA"
+  164  vcim readme.md 
+  165  vim readme.md 
+  166  git log
+  167* git commit --amend -m "editing file"
+  168  git commit -a --ammend -m "editing file"
+  169  git commit -a --amend -m "editing file"
+  170  git log
+  171  vim readme.md 
+  172  git commit -a -m "edited file"
+  173  vim readme.md 
+  174  git commit -a -m "edited file2"
+  175  git log
+  176  git log HEAD
+  177  git log ^HEAD
+  178  git log ^^HEAD
+  179  git log -n 2
+  180  git reset HEAD^^
+  181  git status
+  182  vim readme.md 
+  183  git commit -a -m "about"
+  184  git log
+  185  git commit --amend -m "about sheetal"
+  186  git log
+  187  vim readme.md 
+  188  git commit -a -m "about anika"
+  189  vim readme.md 
+  190  git commit -a -m "anika"
+  191  git log
+  192  git reset --hard HEAD^^
+  193  git status
+  194  git log
+  195  vim readme.md 
+  196  history
+  197  ls
+  198  history >history.txt
